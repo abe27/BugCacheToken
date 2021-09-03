@@ -11,8 +11,11 @@
     "test": "npx hardhat test",
     "local": "npx hardhat node",
     "deploy:test": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy:ropsten": "npx hardhat run scripts/deploy.js --network ropsten",
+    "deploy:kovan": "npx hardhat run scripts/deploy.js --network kovan",
     "deploy:rinkeby": "npx hardhat run scripts/deploy.js --network rinkeby",
     "deploy:goerli": "npx hardhat run scripts/deploy.js --network goerli",
+    "deploy:moonbase": "npx hardhat run scripts/deploy.js --network moonbase",
     "help": "npx hardhat help"
   },
   "devDependencies": {
