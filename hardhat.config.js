@@ -23,7 +23,8 @@ module.exports = {
   defaultNetwork: "localhost",
   networks: {
     localhost: {
-      url: "http://127.0.0.1:8545"
+      url: "http://127.0.0.1:8545",
+      gasPrice: 20000000000,
     },
     rinkeby: {
       url: `https://rinkeby.infura.io/v3/${API_KEY}`,
