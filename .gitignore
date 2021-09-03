@@ -8,3 +8,4 @@ cache
 artifacts
 
 secrets.json
+.DS_Store
