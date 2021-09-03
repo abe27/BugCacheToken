@@ -13,9 +13,18 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
 
+const INFURA_URL = "https://rinkeby.infura.io/v3/1f8f37a5ca8a42948621c094b2a94a2c"
+const { privateKey } = require('./secrets.json');
+
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
   solidity: "0.8.4",
+  network: {
+    rinkeby: {
+      url: INFURA_URL,
+      account: [`0x${privateKey}`]
+    }
+  }
 };

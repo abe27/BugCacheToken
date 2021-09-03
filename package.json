@@ -10,7 +10,8 @@
     "clean": "npx hardhat clean",
     "test": "npx hardhat test",
     "node": "npx hardhat node",
-    "deploy": "node scripts/deploy.js",
+    "deploy:test": "npx hardhat run scripts/deploy.js",
+    "deploy:rinkeby": "npx hardhat run scripts/deploy.js --network rinkeby",
     "help": "npx hardhat help"
   },
   "devDependencies": {
