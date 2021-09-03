@@ -6,8 +6,8 @@ import "hardhat/console.sol";
 contract BugCacheToken {
     string public name = "Bug Cache Token";
     string public symbol = "BCT";
-    uint256 public decimal = 10;
-    uint256 public totalSupply = (100000000 * decimal);
+    uint256 public decimals = 10;
+    uint256 public totalSupply = (1000000000000 * decimals);
     address public owner;
     mapping(address => uint256) balances;
 
